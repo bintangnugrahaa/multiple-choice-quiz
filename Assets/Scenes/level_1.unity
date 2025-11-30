@@ -322,7 +322,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Loop yang akan terus berjalan sampai kondisi terpenuhi adalah?
+  m_Text: "\u201CIf\u201D dalam pemrograman digunakan untuk?"
 --- !u!222 &45118833
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -424,7 +424,7 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
-          m_BoolArgument: 0
+          m_BoolArgument: 1
         m_CallState: 2
 --- !u!114 &50392931
 MonoBehaviour:
@@ -785,6 +785,85 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::jawab
   feed_benar: {fileID: 1872088236}
   feed_salah: {fileID: 1041422384}
+--- !u!1 &72858066
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 72858067}
+  - component: {fileID: 72858068}
+  - component: {fileID: 72858069}
+  m_Layer: 5
+  m_Name: Text_Timer
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &72858067
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 72858066}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1515294428}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 163}
+  m_SizeDelta: {x: 160, y: 30}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!222 &72858068
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 72858066}
+  m_CullTransparentMesh: 1
+--- !u!114 &72858069
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 72858066}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Text
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: d2971470d5481f1448857e504454b25e, type: 3}
+    m_FontSize: 30
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 0
+    m_MaxSize: 300
+    m_Alignment: 4
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: 02:00
 --- !u!1 &91186568
 GameObject:
   m_ObjectHideFlags: 0
@@ -855,7 +934,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: HTML digunakan untuk?
+  m_Text: Tag <img> berfungsi untuk?
 --- !u!222 &91186571
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -934,7 +1013,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Tema aplikasi
+  m_Text: Lingkaran
 --- !u!222 &93875874
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1076,6 +1155,54 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 96604099}
   m_CullTransparentMesh: 1
+--- !u!1 &110524964
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 110524966}
+  - component: {fileID: 110524965}
+  m_Layer: 0
+  m_Name: GameController
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &110524965
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 110524964}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f268ea67a65eca46951fdc038ea5b92, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TimerSoal
+  timerText: {fileID: 72858069}
+  panelSoal: {fileID: 1515294424}
+  panelSelesai: {fileID: 1612796880}
+  durasiDetik: 50
+--- !u!4 &110524966
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 110524964}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 46.008324, y: 18.79835, z: 0}
+  m_LocalScale: {x: 37.699997, y: 37.699997, z: 37.699997}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1515294428}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &124340873
 GameObject:
   m_ObjectHideFlags: 0
@@ -1146,7 +1273,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Python
+  m_Text: Stack
 --- !u!222 &124340876
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1248,7 +1375,7 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
-          m_BoolArgument: 0
+          m_BoolArgument: 1
         m_CallState: 2
 --- !u!114 &146261162
 MonoBehaviour:
@@ -1358,7 +1485,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Operator \u201C==\u201D digunakan untuk?"
+  m_Text: Algoritma sorting digunakan untuk?
 --- !u!222 &146761446
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1437,7 +1564,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Loop
+  m_Text: 2
 --- !u!222 &158930863
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1516,7 +1643,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: class
+  m_Text: Cetak hasil
 --- !u!222 &159486419
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1560,7 +1687,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 29, y: -0.2}
+  m_AnchoredPosition: {x: 40, y: -0.0000048876}
   m_SizeDelta: {x: 101, y: 28.3}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &166292984
@@ -1875,7 +2002,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Object
+  m_Text: 16
 --- !u!222 &214431001
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1954,7 +2081,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Server
+  m_Text: Belah ketupat
 --- !u!222 &221945246
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2033,7 +2160,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Fitur baru
+  m_Text: Oval
 --- !u!222 &243219049
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2378,7 +2505,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Membuat struktur halaman web
+  m_Text: Link
 --- !u!222 &256699991
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2590,7 +2717,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Bahasa pemrograman yang berjalan di browser adalah?
+  m_Text: Struktur data yang FIFO adalah?
 --- !u!222 &298986900
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2669,7 +2796,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Database yang paling umum digunakan adalah?
+  m_Text: IP address digunakan untuk?
 --- !u!222 &424359237
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2771,7 +2898,7 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
-          m_BoolArgument: 0
+          m_BoolArgument: 1
         m_CallState: 2
 --- !u!114 &425807967
 MonoBehaviour:
@@ -3014,7 +3141,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: print()
+  m_Text: Website
 --- !u!222 &433114137
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3093,7 +3220,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Membuat logika program
+  m_Text: Tabel
 --- !u!222 &455620656
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3172,7 +3299,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Dalam pemrograman, bug adalah?
+  m_Text: Flowchart simbol decision berbentuk?
 --- !u!222 &461998703
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3654,7 +3781,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: console.log()
+  m_Text: Aplikasi desktop
 --- !u!222 &521828377
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3817,7 +3944,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Menyimpan database
+  m_Text: Gambar
 --- !u!222 &625453122
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3896,7 +4023,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Menghubungkan database
+  m_Text: Hapus file
 --- !u!222 &639191046
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3975,7 +4102,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Go
+  m_Text: Graph
 --- !u!222 &646865523
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -4054,7 +4181,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Menghapus variabel
+  m_Text: Menghapus
 --- !u!222 &650909125
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -4156,7 +4283,7 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
-          m_BoolArgument: 1
+          m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &701565384
 MonoBehaviour:
@@ -4477,7 +4604,7 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
-          m_BoolArgument: 0
+          m_BoolArgument: 1
         m_CallState: 2
 --- !u!114 &777245380
 MonoBehaviour:
@@ -4610,7 +4737,7 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
-          m_BoolArgument: 1
+          m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &808850676
 MonoBehaviour:
@@ -4733,13 +4860,13 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1515294424}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: 
-        m_Mode: 1
+      - m_Target: {fileID: 1142508288}
+        m_TargetAssemblyTypeName: Jawab, Assembly-CSharp
+        m_MethodName: jawaban
+        m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -4853,7 +4980,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: CSS digunakan untuk?
+  m_Text: Kompresi data bertujuan untuk?
 --- !u!222 &832913365
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -4932,7 +5059,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Git digunakan untuk?
+  m_Text: Python termasuk jenis?
 --- !u!222 &841997587
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -5129,6 +5256,50 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 861637618}
   m_CullTransparentMesh: 1
+--- !u!1 &866149916
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 866149918}
+  - component: {fileID: 866149917}
+  m_Layer: 0
+  m_Name: GameController
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &866149917
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 866149916}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 26832800cb17e294da949bc77bd10efe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GameController
+--- !u!4 &866149918
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 866149916}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.33419, y: -0.65513, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &870693583
 GameObject:
   m_ObjectHideFlags: 0
@@ -5442,7 +5613,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: while
+  m_Text: Input
 --- !u!222 &903696193
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -5599,7 +5770,7 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
-          m_BoolArgument: 1
+          m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &985128398
 MonoBehaviour:
@@ -5709,7 +5880,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Membuat API
+  m_Text: Perkecil file
 --- !u!222 &990314373
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -5811,7 +5982,7 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
-          m_BoolArgument: 1
+          m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1000714304
 MonoBehaviour:
@@ -5921,7 +6092,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Constant
+  m_Text: 10
 --- !u!222 &1012476603
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -6023,7 +6194,7 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
-          m_BoolArgument: 1
+          m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1037253896
 MonoBehaviour:
@@ -6344,7 +6515,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Figma
+  m_Text: Backup
 --- !u!222 &1044664337
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -6423,7 +6594,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Membuat server
+  m_Text: Paragraf
 --- !u!222 &1055543061
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -6635,7 +6806,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Photoshop
+  m_Text: Beri alamat jaringan
 --- !u!222 &1109101866
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -6714,7 +6885,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Menyimpan data
+  m_Text: Duplikasi file
 --- !u!222 &1125557549
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -6848,7 +7019,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Menghapus file
+  m_Text: Bahasa pemrograman
 --- !u!222 &1220762421
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -6982,7 +7153,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Membuat musik
+  m_Text: Protokol
 --- !u!222 &1228759077
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -7084,7 +7255,7 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
-          m_BoolArgument: 1
+          m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1236921544
 MonoBehaviour:
@@ -7194,7 +7365,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: echo()
+  m_Text: Game
 --- !u!222 &1275623581
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -7273,7 +7444,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: JavaScript
+  m_Text: Queue
 --- !u!222 &1291693264
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -7352,7 +7523,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: printf()
+  m_Text: Musik
 --- !u!222 &1308905218
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -7431,7 +7602,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: C++
+  m_Text: Tree
 --- !u!222 &1329897498
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -7533,7 +7704,7 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
-          m_BoolArgument: 0
+          m_BoolArgument: 1
         m_CallState: 2
 --- !u!114 &1342004944
 MonoBehaviour:
@@ -7643,7 +7814,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: else
+  m_Text: Kondisi
 --- !u!222 &1342577020
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -7745,7 +7916,7 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
-          m_BoolArgument: 1
+          m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1435241740
 MonoBehaviour:
@@ -7988,7 +8159,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: if
+  m_Text: Loop
 --- !u!222 &1464651315
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -8090,7 +8261,7 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
-          m_BoolArgument: 1
+          m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1466999641
 MonoBehaviour:
@@ -8275,6 +8446,7 @@ GameObject:
   - component: {fileID: 1481356678}
   - component: {fileID: 1481356677}
   - component: {fileID: 1481356676}
+  - component: {fileID: 1481356679}
   m_Layer: 5
   m_Name: beranda
   m_TagString: Untagged
@@ -8396,6 +8568,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1481356674}
   m_CullTransparentMesh: 1
+--- !u!114 &1481356679
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1481356674}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 28cf6cc3c6b18b249bcd3d4229357d7a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ButtonClickSound
 --- !u!1 &1515294424
 GameObject:
   m_ObjectHideFlags: 0
@@ -8491,6 +8675,7 @@ RectTransform:
   m_LocalScale: {x: 0.0265252, y: 0.0265252, z: 0.0265252}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 72858067}
   - {fileID: 2060905475}
   - {fileID: 1142508287}
   - {fileID: 1601693299}
@@ -8503,6 +8688,7 @@ RectTransform:
   - {fileID: 182492274}
   - {fileID: 842978873}
   - {fileID: 1612796881}
+  - {fileID: 110524966}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -8592,7 +8778,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Variabel yang nilainya tidak bisa diubah disebut?
+  m_Text: Binary memiliki basis?
 --- !u!222 &1529487708
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -8671,7 +8857,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Perintah untuk mencetak teks di Python adalah?
+  m_Text: HTML digunakan untuk membuat?
 --- !u!222 &1583018513
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -8750,7 +8936,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Mengelola versi kode
+  m_Text: OS
 --- !u!222 &1599930614
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -8884,7 +9070,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Kesalahan dalam program
+  m_Text: Persegi
 --- !u!222 &1607154044
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -8919,7 +9105,7 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1612796880}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -8929,7 +9115,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0.00000036344, y: 30}
   m_SizeDelta: {x: 363, y: 160}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1612796882
@@ -8965,7 +9151,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Menunggu Hasil...
+  m_Text: "Awaiting Results\u2026"
 --- !u!222 &1612796883
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -9057,7 +9243,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Membuat animasi
+  m_Text: Hardware
 --- !u!222 &1652474641
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -9292,7 +9478,7 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
-          m_BoolArgument: 0
+          m_BoolArgument: 1
         m_CallState: 2
 --- !u!114 &1663839798
 MonoBehaviour:
@@ -9568,7 +9754,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Penjumlahan
+  m_Text: Mengacak data
 --- !u!222 &1836793201
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -9647,7 +9833,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: MySQL
+  m_Text: Encode gambar
 --- !u!222 &1853297397
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -10093,7 +10279,7 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
-          m_BoolArgument: 0
+          m_BoolArgument: 1
         m_CallState: 2
 --- !u!114 &1946043979
 MonoBehaviour:
@@ -10426,7 +10612,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Mengatur tampilan halaman web
+  m_Text: Besarkan file
 --- !u!222 &1976116706
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -10505,7 +10691,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Beranda
+  m_Text: Home
 --- !u!222 &2039288695
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -10584,7 +10770,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Method
+  m_Text: 8
 --- !u!222 &2050566292
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -10797,7 +10983,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Skor : '
+  m_Text: 'Score : '
 --- !u!222 &2060905477
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -11088,7 +11274,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Illustrator
+  m_Text: Format teks
 --- !u!222 &2091053163
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -11167,7 +11353,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Pengurangan
+  m_Text: Mengurutkan
 --- !u!222 &2105655441
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -11269,7 +11455,7 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
-          m_BoolArgument: 0
+          m_BoolArgument: 1
         m_CallState: 2
 --- !u!114 &2109952796
 MonoBehaviour:
@@ -11379,7 +11565,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Membandingkan nilai
+  m_Text: Menyimpan
 --- !u!222 &2137929473
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -11398,3 +11584,4 @@ SceneRoots:
   - {fileID: 2062084207}
   - {fileID: 1515294428}
   - {fileID: 1803744295}
+  - {fileID: 866149918}
