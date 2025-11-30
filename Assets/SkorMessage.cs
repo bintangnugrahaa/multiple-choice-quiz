@@ -7,7 +7,9 @@ public class SkorMessage : MonoBehaviour
 
     void Start()
     {
-        int skor = PlayerPrefs.GetInt("skor");
+        int skor = PlayerPrefs.GetInt("skor", 0);
+
+        if (pesanText == null) return;
 
         if (skor >= 70)
         {

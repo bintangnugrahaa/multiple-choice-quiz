@@ -189,7 +189,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: kembali
+  m_Text: Back
 --- !u!222 &124340876
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -268,7 +268,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Nama\t: Yesi Agustin\nNIM\t\t: 4522210023"
+  m_Text: "Name\t\t\t\t: Yesi Agustin\nStudent ID\t: 4522210023"
 --- !u!222 &298986900
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -987,11 +987,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Terima kasih telah memainkan game ini. Game ini dibuat oleh Yesi Agustin
-    menggunakan Unity untuk memberikan pengalaman bermain yang sederhana namun bermanfaat.
-    Beberapa aset gambar dan suara diambil dari sumber bebas lisensi untuk mendukung
-    tampilan dan suasana game. Semoga game ini dapat membantu Anda belajar sambil
-    bermain. Terima kasih atas dukungan Anda.
+  m_Text: This game was developed by Yesi Agustin using Unity. Several freely licensed
+    assets were incorporated to enhance both the visual and audio experience. I hope
+    this game proves useful and enjoyable. Thank you for playing!
 --- !u!222 &2143812914
 CanvasRenderer:
   m_ObjectHideFlags: 0

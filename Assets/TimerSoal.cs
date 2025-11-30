@@ -6,20 +6,20 @@ public class TimerSoal : MonoBehaviour
     public Text timerText;
     public GameObject panelSoal;
     public GameObject panelSelesai;
+
     public float durasiDetik = 120f;
 
     private float waktu;
     private bool timerOn = false;
 
+    private const string KEY_CURRENT_SCORE = "skor";
+
     void Start()
     {
         waktu = durasiDetik;
 
-        if (panelSelesai != null)
-            panelSelesai.SetActive(false);
-
-        if (panelSoal != null)
-            panelSoal.SetActive(true);
+        if (panelSelesai != null) panelSelesai.SetActive(false);
+        if (panelSoal != null) panelSoal.SetActive(true);
 
         timerOn = true;
         UpdateTimerText();
@@ -59,49 +59,26 @@ public class TimerSoal : MonoBehaviour
 
     void WaktuHabis()
     {
-        Debug.Log("Waktu habis - menampilkan panel selesai");
+        int finalScore = PlayerPrefs.GetInt(KEY_CURRENT_SCORE, 0);
+        SimpanKeHighscore(finalScore);
 
-        if (panelSoal == null)
-        {
-            Debug.LogWarning("panelSoal belum diassign di Inspector!");
-            if (panelSelesai != null) panelSelesai.SetActive(true);
-            return;
-        }
-
-        for (int i = 0; i < panelSoal.transform.childCount; i++)
-        {
-            Transform child = panelSoal.transform.GetChild(i);
-            string nama = child.name.ToLower();
-
-            if (nama == "selesai")
-            {
-                child.gameObject.SetActive(true);
-            }
-            else if (nama == "skor")
-            {
-                child.gameObject.SetActive(true);
-            }
-            else
-            {
-                child.gameObject.SetActive(false);
-            }
-        }
-
-        if (panelSelesai != null && panelSelesai.transform.parent != panelSoal.transform)
-        {
-            panelSelesai.SetActive(true);
-        }
+        if (panelSoal != null) panelSoal.SetActive(false);
+        if (panelSelesai != null) panelSelesai.SetActive(true);
     }
 
-    public void StopTimer()
+    void SimpanKeHighscore(int skor)
     {
-        timerOn = false;
-    }
+        int s1 = PlayerPrefs.GetInt("highscore1", 0);
+        int s2 = PlayerPrefs.GetInt("highscore2", 0);
+        int s3 = PlayerPrefs.GetInt("highscore3", 0);
 
-    public void ResetAndStartTimer()
-    {
-        waktu = durasiDetik;
-        timerOn = true;
-        UpdateTimerText();
+        int[] arr = new int[] { s1, s2, s3, skor };
+        System.Array.Sort(arr);
+
+        PlayerPrefs.SetInt("highscore1", arr[3]);
+        PlayerPrefs.SetInt("highscore2", arr[2]);
+        PlayerPrefs.SetInt("highscore3", arr[1]);
+
+        PlayerPrefs.Save();
     }
 }

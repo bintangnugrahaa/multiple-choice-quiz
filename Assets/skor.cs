@@ -1,18 +1,20 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.UI;
 
-public class skor : MonoBehaviour
+[RequireComponent(typeof(Text))]
+public class SkorDisplay : MonoBehaviour
 {
+    private const string KEY_CURRENT_SCORE = "skor";
+    private Text txt;
 
-    void Start()
+    void Awake()
     {
-        PlayerPrefs.SetInt("skor", 0);
+        txt = GetComponent<Text>();
     }
 
     void Update()
     {
-        GetComponent<Text>().text = PlayerPrefs.GetInt("skor").ToString();
+        if (txt != null)
+            txt.text = PlayerPrefs.GetInt(KEY_CURRENT_SCORE, 0).ToString();
     }
 }
