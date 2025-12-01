@@ -60,6 +60,10 @@ public class TimerSoal : MonoBehaviour
     void WaktuHabis()
     {
         int finalScore = PlayerPrefs.GetInt(KEY_CURRENT_SCORE, 0);
+
+        PlayerPrefs.SetInt("skor", finalScore);
+        PlayerPrefs.Save();
+
         SimpanKeHighscore(finalScore);
 
         if (panelSoal != null) panelSoal.SetActive(false);
